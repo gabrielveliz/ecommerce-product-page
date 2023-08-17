@@ -1,0 +1,38 @@
+.img_principal_mob img{
+  width: 100%;
+  user-select: none;
+}
+
+.color{
+  fill: hsl(223, 64%, 98%);
+  transform: scale(1.4);
+}
+.color:hover{
+  fill: hsl(26, 100%, 55%);
+}
+
+.colordir,.colorder{
+  stroke: #1D2026;
+  margin: 0 auto;
+}
+.izq_mob, .der_mob{
+  display: flex;
+  position: absolute;
+  padding: 1rem;
+  background-color:hsl(223, 64%, 98%) ;
+  border-radius: 10rem;
+  display: flex;
+  width: 5rem;
+  height: 5rem;
+  margin-top: 18rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1;
+}
+.izq_mob{
+  margin-left: 2%;
+}
+.der_mob{
+  margin-left: 85%;
+}

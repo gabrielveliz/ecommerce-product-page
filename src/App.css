@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+html{
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1 rem = 10px */
+  width: 100%;
+  height: 100%;
+}
+body{
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,*:before,*:after{
+  box-sizing: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* ***************** */
+
+span{
+  font-family: 'Kumbh Sans', sans-serif;
+}
+.contenedor{
+  padding: 2rem 10em;
+  width: 100%;
+  max-width: 144rem;
+  margin: 0 auto;
+  z-index: 1;
+  min-width: 37rem;
+}
+
+.fila1{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  width: 100%;
+  border-bottom:1px solid hsla(220, 14%, 75%,0.5);
+}
+@media (max-width:500px){
+  .fila1{padding: 0rem 0rem;}
+}
+
+.men_mob{
+  display: none;
+}
+
+.fila2{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.galmob{
+  display: none;
+}
+@media (max-width:80rem){
+  .fila2{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+@media (max-width:500px){
+  .contenedor{
+    padding: 0rem;
+  }
+
+  .galmob{
+    display: block;
+  }
+  .galdes{
+    display: none;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.fila2_izq,.fila2_der{
+  padding: 6rem;
+}
+@media (max-width:800px){
+  .fila2_izq,.fila2_der{
+    padding: 2rem;
+  }
+  .men{
+    display: none;
+  }
+  .men_mob{
+    display: block;
+  }
+}
+@media (max-width:500px){
+  .fila2_izq,.fila2_der{
+    padding: 0rem;
+  }
+
+}
+
+.fila2_der{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

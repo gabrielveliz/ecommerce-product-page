@@ -1,0 +1,38 @@
+.cont_carro_avatar{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 4rem;
+    align-items: center;
+    margin-right: 1rem;
+}
+.img_perfil img{
+    width: 5rem;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 10rem;
+}
+.img_perfil img:hover{
+    border: 2px solid hsl(26, 100%, 55%);
+
+}
+.img_carro{
+    cursor: pointer;
+}
+.mininumero{
+    position: absolute;
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 2rem;
+    padding: 0rem 0.5rem;
+    margin-left: 1rem;
+    margin-top: -1rem;
+    color: hsl(0, 0%, 100%);
+}
+.contcarrito{
+    display: none;
+}
+.colorcarro{
+    fill: hsl(219, 9%, 45%);
+}
+.colorcarro:hover{
+    fill: hsl(220, 13%, 13%);
+}

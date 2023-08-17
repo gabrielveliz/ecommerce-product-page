@@ -1,0 +1,14 @@
+.attribution{
+    width: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 1rem;
+    color: hsl(219, 9%, 45%);
+    font-weight: 700;
+}
+.attribution a{
+    color: hsl(219, 9%, 45%);
+}
+.attribution a:hover{
+    color: hsl(26, 100%, 55%);
+}

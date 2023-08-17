@@ -1,0 +1,91 @@
+.con_articulos{
+  position: absolute;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow:1px 5px 10px 2px hsla(0, 0%, 0%,0.2);
+  width: 35rem;
+  margin-left: -16rem;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  z-index: 2;
+  
+}
+@media (max-width:500px){
+  .con_articulos{
+    position: absolute;
+
+    width: 37rem;
+    margin-left: -67%;
+    margin-top: 3.5rem;
+    border-radius: 1rem;
+  }
+}
+.con_articulos_titulo{
+  padding: 1.5rem;
+  border-bottom:1px solid hsla(220, 14%, 75%,0.5);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.con_articulos_lista{
+  display: flex;
+  padding: 1.5rem;
+}
+@media (max-width:500px){
+  .con_articulos_lista{
+    margin-left: 2rem;
+  }
+}
+.empty{
+  align-items: center;
+  text-align: center;
+  width: 100% ;
+  padding: 6rem 0rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: hsl(219, 9%, 45%);
+}
+
+.lleno{
+  display: flex;
+  align-items: center;
+}
+
+.llenoimg,.llenotex,.llenologo{
+  padding: 0.6rem;
+}
+.llenotex{
+  font-size: 1.4rem;
+}
+
+.llenoimg img{
+  width: 4rem;
+  border-radius: 0.5rem;
+}
+.gr{
+  color: hsl(219, 9%, 45%);
+}
+.negrita{
+  font-weight: 700;
+  color: hsl(220, 13%, 13%);
+}
+.llenologo{
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.botoncheck{
+  width: 100%;
+  background-color: hsl(26, 100%, 55%);
+  margin: 0.6rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 1rem;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.botoncheck:hover{
+  background-color: hsla(26, 100%, 55%,0.7);
+}
+.lista{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}

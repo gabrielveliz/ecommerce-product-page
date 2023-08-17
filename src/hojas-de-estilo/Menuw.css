@@ -1,0 +1,23 @@
+.cont_menu{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    
+}
+.menu{
+    display: flex;
+    
+}
+.opcionmenu{
+    font-size: 1.6rem;
+    color: hsl(219, 9%, 45%);
+    cursor: pointer;
+    margin: 0rem 2rem;
+    padding:4rem 0rem;
+    border-bottom: 4px solid white;
+}
+.opcionmenu:hover{
+    color: hsl(220, 13%, 13%);
+    font-weight: 400;
+    border-bottom: 4px solid hsl(26, 100%, 55%);
+}
